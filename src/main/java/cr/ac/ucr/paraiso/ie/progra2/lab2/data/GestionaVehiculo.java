@@ -18,47 +18,41 @@ public class GestionaVehiculo {
             buffer.append("\n").append(vehiculo);
             System.out.println("Se agrego el nuevo vehículo al reporte");
             System.out.println(vehiculo);
+            buffer.close();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
 
     }
 
-    private boolean buscar(String serial, String path) throws IOException {
-        File archivo = new File(path);
-        String dato = "";
-        boolean encontrado = false;
-        try {
-            BufferedReader BR = new BufferedReader(new FileReader(archivo));
+//    private boolean buscar(String serial, String path) throws IOException {
+//        File archivo = new File(path);
+//        String dato = "";
+//        boolean encontrado = false;
+//        try {
+//            BufferedReader BR = new BufferedReader(new FileReader(archivo));
+//
+//            while ((dato = BR.readLine()) != null) {
+//
+//                if (dato.equalsIgnoreCase(serial)) {
+//                    System.out.println(dato);
+//
+//                    for (int i = 0; i < 2; i++) {
+//                        System.out.println(BR.readLine());
+//                    }
+//                    encontrado = true;
+//                    break;
+//                }
+//            }
+//        } catch (IOException e) {
+//
+//            System.out.println("Error");
+//        }
+//
+//        return encontrado;
+//    }
 
-            while ((dato = BR.readLine()) != null) {
-
-                if (dato.equalsIgnoreCase(serial)) {
-                    System.out.println(dato);
-
-                    for (int i = 0; i < 2; i++) {
-                        System.out.println(BR.readLine());
-                    }
-                    encontrado = true;
-                    break;
-                }
-            }
-        } catch (IOException e) {
-
-            System.out.println("Error");
-        }
-
-        return encontrado;
-    }
-
-    public String modificar(String serial, String vehiculo, String path) {
-        try {
-            if (buscar(serial, path)) {
-
-            }
-        } catch (IOException e) {
-
-            System.out.println("Error");
-        }
-    }
+//    public void modificar(String serial, String vehiculo, String path) {
+//
+//
 }

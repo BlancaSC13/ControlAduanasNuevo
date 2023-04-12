@@ -74,7 +74,7 @@ public class Vehiculo {
                 ", motor=" + motor +
                 ", color='" + color + '\'' +
                 ", modelo='" + modelo + '\'' +
-                ", valor=" + valor +
-                ", tax=" + tax;
+                ", valor=" + valor + '\'' +
+                ", tax=" + tax + '\'';
     }
 }

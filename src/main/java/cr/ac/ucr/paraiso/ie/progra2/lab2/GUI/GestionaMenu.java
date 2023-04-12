@@ -58,7 +58,7 @@ public class GestionaMenu {
                         System.out.println("Digite el serial del vehiculo a modificar");
                         String numSerial = scanner.next();
                         String dato = datosCargaPesada();
-                        gestionaVehiculo.modificar(numSerial,dato,path);
+                     //   gestionaVehiculo.modificar(numSerial,dato,path);
 
                 }
                 break;
